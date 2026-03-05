@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Daffodils Infant School | Curriculum & Programs</title>
+    <meta name="description" content="Explore our comprehensive academic programs at Daffodils Infant School. Nursery, Primary Classes (1-8), curriculum details, teaching methods, and educational approach.">
+    <meta name="keywords" content="school curriculum, academic programs, nursery education, primary classes, teaching methods, Daffodils school academics">
+    <meta property="og:title" content="Academics - Daffodils Infant School">
+    <meta property="og:description" content="Comprehensive academic programs for holistic development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://daffodils.edu/academics.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #1a1a2e;
+    --secondary: #16213e;
+    --gold: #f4c542;
+    --gold-light: #fde98a;
+    --teal: #0f9b8e;
+    --cream: #fef9ef;
+    --white: #ffffff;
+    --text-main: #1a1a2e;
+    --text-muted: #6b7280;
+    --radius: 20px;
+    --shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-main); overflow-x: hidden; }
+
+/* NAVBAR */
+.navbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.2rem 0;
+    background: rgba(26,26,46,0.96); backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3); transition: all 0.4s ease;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.navbar-container { display: flex; align-items: center; justify-content: space-between; }
+.navbar-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; color: var(--white); }
+.navbar-logo i { color: var(--gold); font-size: 1.6rem; }
+.navbar-menu { display: flex; list-style: none; gap: 0.25rem; }
+.navbar-link { text-decoration: none; color: rgba(255,255,255,0.85); font-weight: 500; font-size: 0.95rem; padding: 0.5rem 1rem; border-radius: 8px; transition: all 0.3s ease; }
+.navbar-link:hover, .navbar-link.active { color: var(--gold); background: rgba(244,197,66,0.12); }
+.navbar-toggle { display: none; background: none; border: none; color: white; font-size: 1.4rem; cursor: pointer; }
+
+/* PAGE HERO */
+.page-hero {
+    background: linear-gradient(160deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    padding: 9rem 0 5rem; position: relative; overflow: hidden; text-align: center;
+}
+.page-hero::before {
+    content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+    width: 800px; height: 500px;
+    background: radial-gradient(ellipse, rgba(244,197,66,0.1) 0%, transparent 70%); border-radius: 50%;
+}
+.page-hero::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 80px;
+    background: var(--cream); clip-path: ellipse(55% 100% at 50% 100%);
+}
+.page-hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: linear-gradient(135deg, var(--gold), #f59e0b);
+    color: var(--primary); padding: 0.45rem 1.2rem; border-radius: 50px;
+    font-size: 0.88rem; font-weight: 700; margin-bottom: 1.5rem;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    box-shadow: 0 8px 25px rgba(244,197,66,0.4);
+    animation: badgePop 0.8s cubic-bezier(0.34,1.56,0.64,1) 0.3s both;
+}
+@keyframes badgePop { from { opacity:0; transform:scale(0.6) translateY(20px); } to { opacity:1; transform:scale(1) translateY(0); } }
+.page-hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem,5vw,3.8rem); font-weight: 900; color: var(--white); line-height: 1.15; margin-bottom: 1.2rem; animation: heroFadeUp 1s cubic-bezier(0.4,0,0.2,1) 0.5s both; }
+.page-hero-title span { background: linear-gradient(135deg, var(--gold), var(--gold-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.page-hero-subtitle { font-size: 1.15rem; color: rgba(255,255,255,0.75); max-width: 560px; margin: 0 auto; line-height: 1.7; animation: heroFadeUp 1s cubic-bezier(0.4,0,0.2,1) 0.7s both; }
+@keyframes heroFadeUp { from { opacity:0; transform:translateY(50px); } to { opacity:1; transform:translateY(0); } }
+
+/* SECTIONS */
+.section { padding: 5.5rem 0; }
+.section-light { background: var(--cream); }
+.section-white { background: var(--white); }
+.section-dark { background: linear-gradient(160deg, #1a1a2e 0%, #16213e 100%); position: relative; overflow: hidden; }
+.section-dark::before { content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(244,197,66,0.07) 0%, transparent 70%); border-radius: 50%; }
+.section-dark::after { content: ''; position: absolute; bottom: -150px; left: -150px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(15,155,142,0.09) 0%, transparent 70%); border-radius: 50%; }
+
+.section-header { text-align: center; margin-bottom: 4rem; }
+.section-eyebrow { display: inline-block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.75rem; }
+.section-eyebrow-gold { color: var(--gold); }
+.section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem,3.5vw,2.8rem); font-weight: 900; color: var(--primary); line-height: 1.2; display: inline-block; position: relative; }
+.section-title::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: linear-gradient(90deg, var(--gold), var(--teal)); border-radius: 2px; }
+.section-title-light { color: var(--white); }
+.section-subtitle { font-size: 1.05rem; color: var(--text-muted); max-width: 580px; margin: 1.5rem auto 0; line-height: 1.7; }
+.section-subtitle-light { color: rgba(255,255,255,0.6); }
+
+.grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 2rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.75rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.25rem; }
+
+/* PROGRAM CARDS */
+.program-card {
+    background: white; border-radius: var(--radius); padding: 2.5rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07); transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+    border: 1px solid rgba(0,0,0,0.04); position: relative; overflow: hidden;
+}
+.program-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--teal));
+    transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;
+}
+.program-card:hover::before { transform: scaleX(1); }
+.program-card:hover { transform: translateY(-8px); box-shadow: 0 25px 60px rgba(0,0,0,0.13); }
+
+.program-icon {
+    width: 90px; height: 90px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), #0f3460);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1.75rem; font-size: 2.2rem; color: var(--gold);
+    border: 3px solid rgba(244,197,66,0.3);
+    box-shadow: 0 10px 30px rgba(26,26,46,0.2); transition: transform 0.3s ease;
+}
+.program-card:hover .program-icon { transform: scale(1.08) rotate(-5deg); }
+.program-card-title { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--primary); margin-bottom: 0.75rem; text-align: center; }
+.program-card-desc { color: var(--text-muted); line-height: 1.75; font-size: 0.95rem; text-align: center; margin-bottom: 2rem; }
+
+.sub-heading {
+    font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700;
+    color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;
+}
+.sub-heading::before { content: ''; display: block; width: 4px; height: 18px; background: linear-gradient(180deg, var(--gold), var(--teal)); border-radius: 2px; }
+
+/* SUBJECT PILLS */
+.subject-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.75rem; margin-bottom: 2rem; }
+.subject-pill {
+    display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem;
+    background: var(--cream); border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+.subject-pill:hover { background: rgba(244,197,66,0.1); border-color: rgba(244,197,66,0.3); transform: translateX(4px); }
+.subject-pill-icon {
+    width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--primary), #0f3460);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.9rem; color: var(--gold);
+}
+.subject-pill-name { font-weight: 600; font-size: 0.9rem; color: var(--primary); }
+
+/* SCHEDULE GRID */
+.schedule-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.85rem; margin-bottom: 2rem; }
+.schedule-item {
+    background: linear-gradient(135deg, rgba(26,26,46,0.04), rgba(15,155,142,0.05));
+    border: 1px solid rgba(15,155,142,0.15); border-radius: 12px; padding: 1rem;
+    transition: all 0.3s ease;
+}
+.schedule-item:hover { border-color: rgba(244,197,66,0.3); background: rgba(244,197,66,0.05); }
+.schedule-label { display: flex; align-items: center; gap: 0.5rem; font-weight: 700; font-size: 0.88rem; color: var(--teal); margin-bottom: 0.3rem; }
+.schedule-label i { font-size: 0.8rem; }
+.schedule-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+
+/* DEV FOCUS */
+.dev-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.85rem; }
+.dev-item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; background: var(--cream); border-radius: 12px; border: 1px solid rgba(0,0,0,0.04); transition: all 0.3s ease; }
+.dev-item:hover { background: rgba(244,197,66,0.07); border-color: rgba(244,197,66,0.2); }
+.dev-icon { width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0; background: linear-gradient(135deg, var(--gold), #f59e0b); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: var(--primary); }
+.dev-title { font-weight: 700; font-size: 0.88rem; color: var(--primary); margin-bottom: 0.15rem; }
+.dev-desc { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+
+.divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.08), transparent); margin: 1.75rem 0; }
+
+/* TEACHING METHODS */
+.method-item {
+    display: flex; align-items: flex-start; gap: 2rem; padding: 2rem;
+    background: white; border-radius: var(--radius);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07); transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+    border: 1px solid rgba(0,0,0,0.04); margin-bottom: 1.25rem; position: relative; overflow: hidden;
+}
+.method-item::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+    background: linear-gradient(180deg, var(--gold), var(--teal));
+    transform: scaleY(0); transform-origin: top; transition: transform 0.4s ease;
+}
+.method-item:hover::before { transform: scaleY(1); }
+.method-item:hover { transform: translateX(10px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
+.method-icon {
+    width: 68px; height: 68px; border-radius: 18px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--primary), #0f3460);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.7rem; color: var(--gold);
+    border: 2px solid rgba(244,197,66,0.25);
+    box-shadow: 0 8px 20px rgba(26,26,46,0.2); transition: transform 0.3s ease;
+}
+.method-item:hover .method-icon { transform: scale(1.1) rotate(-5deg); }
+.method-content { flex: 1; }
+.method-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
+.method-desc { color: var(--text-muted); line-height: 1.75; font-size: 0.95rem; }
+
+/* CURRICULUM CARDS */
+.feature-card {
+    background: white; border-radius: var(--radius); padding: 2.2rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07); transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+    border: 1px solid rgba(0,0,0,0.04); position: relative; overflow: hidden;
+}
+.feature-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--teal)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+.feature-card:hover::before { transform: scaleX(1); }
+.feature-card:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(0,0,0,0.14); }
+.card-icon { width: 64px; height: 64px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 1.5rem; background: linear-gradient(135deg, var(--gold), #f59e0b); color: var(--primary); transition: transform 0.3s ease; }
+.feature-card:hover .card-icon { transform: rotate(-6deg) scale(1.1); }
+.card-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.75rem; }
+.card-desc { color: var(--text-muted); line-height: 1.7; font-size: 0.95rem; }
+
+/* DARK CARDS */
+.dark-card { background: rgba(255,255,255,0.06); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius); padding: 2.2rem; transition: all 0.4s cubic-bezier(0.4,0,0.2,1); position: relative; overflow: hidden; z-index: 1; }
+.dark-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(244,197,66,0.07), rgba(15,155,142,0.07)); opacity: 0; transition: opacity 0.4s ease; z-index: -1; }
+.dark-card:hover::before { opacity: 1; }
+.dark-card:hover { transform: translateY(-8px); border-color: rgba(244,197,66,0.3); box-shadow: 0 25px 60px rgba(0,0,0,0.3); }
+.dark-card-icon { width: 60px; height: 60px; border-radius: 16px; background: rgba(244,197,66,0.15); color: var(--gold); border: 1px solid rgba(244,197,66,0.3); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; transition: transform 0.3s ease; }
+.dark-card:hover .dark-card-icon { transform: rotate(-6deg) scale(1.1); }
+.dark-card-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--white); margin-bottom: 0.75rem; }
+.dark-card-text { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; }
+
+/* CTA */
+.cta-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); padding: 6rem 0; text-align: center; position: relative; overflow: hidden; }
+.cta-section::before { content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%); width: 700px; height: 400px; background: radial-gradient(ellipse, rgba(244,197,66,0.12) 0%, transparent 70%); border-radius: 50%; }
+.cta-section .section-title { color: var(--white); }
+.cta-subtitle { font-size: 1.15rem; color: rgba(255,255,255,0.7); margin: 1.5rem auto 2.5rem; max-width: 500px; line-height: 1.7; }
+.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+.btn-hero { display: inline-flex; align-items: center; gap: 0.6rem; padding: 1rem 2.2rem; border-radius: 50px; font-weight: 700; font-size: 1rem; text-decoration: none; border: none; cursor: pointer; transition: all 0.35s cubic-bezier(0.4,0,0.2,1); position: relative; overflow: hidden; }
+.btn-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent); transform: translateX(-100%); transition: transform 0.5s ease; }
+.btn-hero:hover::after { transform: translateX(100%); }
+.btn-gold { background: linear-gradient(135deg, var(--gold), #f59e0b); color: var(--primary); box-shadow: 0 10px 35px rgba(244,197,66,0.4); }
+.btn-gold:hover { transform: translateY(-4px) scale(1.04); box-shadow: 0 20px 50px rgba(244,197,66,0.5); }
+.btn-outline-white { background: transparent; color: white; border: 2.5px solid rgba(255,255,255,0.4); }
+.btn-outline-white:hover { background: rgba(255,255,255,0.1); border-color: white; transform: translateY(-4px); }
+
+/* FOOTER */
+.footer { background: #111827; color: rgba(255,255,255,0.75); padding: 4rem 0 0; }
+.footer-content { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.footer-logo { display: flex; align-items: center; gap: 0.75rem; font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: white; margin-bottom: 1rem; text-decoration: none; }
+.footer-logo i { color: var(--gold); }
+.footer-desc { font-size: 0.93rem; line-height: 1.7; margin-bottom: 1.5rem; }
+.footer-socials { display: flex; gap: 0.75rem; }
+.social-link { width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; font-size: 1rem; }
+.social-link:hover { background: var(--gold); color: var(--primary); transform: translateY(-3px); }
+.footer-heading { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: white; font-weight: 700; margin-bottom: 1.25rem; }
+.footer-list { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+.footer-list li a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 0.92rem; transition: color 0.3s ease; display: flex; align-items: center; gap: 0.4rem; }
+.footer-list li a:hover { color: var(--gold); }
+.footer-list li a i { font-size: 0.8rem; color: var(--gold); }
+.footer-bottom { text-align: center; padding: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.35); }
+
+/* FADE-IN */
+.fade-in { opacity: 0; transform: translateY(40px); transition: all 0.7s cubic-bezier(0.4,0,0.2,1); }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.fade-in-delay-1 { transition-delay: 0.1s; }
+.fade-in-delay-2 { transition-delay: 0.2s; }
+.fade-in-delay-3 { transition-delay: 0.3s; }
+.fade-in-delay-4 { transition-delay: 0.4s; }
+.fade-in-delay-5 { transition-delay: 0.5s; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) { .grid-3 { grid-template-columns: repeat(2,1fr); } .footer-content { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } .footer-content { grid-template-columns: 1fr; gap: 2rem; } .navbar-menu { display: none; } .navbar-toggle { display: block; } .method-item { flex-direction: column; } .method-item:hover { transform: translateY(-5px); } .subject-grid, .dev-grid, .schedule-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 480px) { .subject-grid { grid-template-columns: 1fr; } .schedule-grid, .dev-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Daffodils Infant School</span>
+            </a>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="admissions.html" class="navbar-link">Admissions</a></li>
+                <li><a href="academics.html" class="navbar-link active">Academics</a></li>
+                <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="container">
+        <div class="page-hero-eyebrow"><i class="fas fa-book-open"></i> Curriculum & Programs</div>
+        <h1 class="page-hero-title">Academic <span>Excellence</span></h1>
+        <p class="page-hero-subtitle">Comprehensive educational programs designed for holistic development and lifelong learning</p>
+    </div>
+</section>
+
+<!-- OUR PROGRAMS -->
+<section class="section section-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-eyebrow">What We Offer</span>
+            <h2 class="section-title">Our Programs</h2>
+            <p class="section-subtitle">Age-appropriate educational programs designed for every stage of learning</p>
+        </div>
+        <div class="grid-2">
+
+            <!-- NURSERY -->
+            <div class="program-card fade-in fade-in-delay-1">
+                <div class="program-icon"><i class="fas fa-baby"></i></div>
+                <div class="program-card-title">Nursery Program</div>
+                <p class="program-card-desc">A foundation program for children aged 2–3 years, focusing on sensory development, social skills, language acquisition, and cognitive growth through play-based learning and interactive activities.</p>
+
+                <div class="sub-heading">Key Learning Areas</div>
+                <div class="subject-grid">
+                    <div class="subject-pill">
+                        <div class="subject-pill-icon"><i class="fas fa-music"></i></div>
+                        <div class="subject-pill-name">Music & Movement</div>
+                    </div>
+                    <div class="subject-pill">
+                        <div class="subject-pill-icon"><i class="fas fa-paint-brush"></i></div>
+                        <div class="subject-pill-name">Art & Craft</div>
+                    </div>
+                    <div class="subject-pill">
+                        <div class="subject-pill-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="subject-pill-name">Story Time</div>
+                    </div>
+                    <div class="subject-pill">
+                        <div class="subject-pill-icon"><i class="fas fa-gamepad"></i></div>
+                        <div class="subject-pill-name">Play Activities</div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <div class="sub-heading">Daily Schedule</div>
+                <div class="schedule-grid">
+                    <div class="schedule-item">
+                        <div class="schedule-label"><i class="fas fa-sun"></i> Morning Session</div>
+                        <div class="schedule-desc">Learning activities, music, art</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-label"><i class="fas fa-cloud-sun"></i> Afternoon Session</div>
+                        <div class="schedule-desc">Lunch, nap time, play activities</div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <div class="sub-heading">Development Focus</div>
+                <div class="dev-grid">
+                    <div class="dev-item">
+                        <div class="dev-icon"><i class="fas fa-heart"></i></div>
+                        <div><div class="dev-title">Emotional Growth</div><div class="dev-desc">Building confidence & self-expression</div></div>
+                    </div>
+                    <div class="dev-item">
+                        <div class="dev-icon"><i class="fas fa-users"></i></div>
+                        <div><div class="dev-title">Social Skills</div><div class="dev-desc">Making friends and sharing</div></div>
+                    </div>
+                    <div class="dev-item">
+                        <div class="dev-icon"><i class="fas fa-brain"></i></div>
+                        <div><div class="dev-title">Cognitive Skills</div><div class="dev-desc">Problem-solving & thinking</div></div>
+                    </div>
+                    <div class="dev-item">
+                        <div class="dev-icon"><i class="fas fa-running"></i></div>
+                        <div><div class="dev-title">Physical Dev.</div><div class="dev-desc">Motor skills & coordination</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRIMARY -->
+            <div class="program-card fade-in fade-in-delay-2">
+                <div class="program-icon"><i class="fas fa-child"></i></div>
+                <div class="program-card-title">Primary & Middle School (Class 1–8)</div>
+                <p class="program-card-desc">Comprehensive education from Class 1 to 8, focusing on academic excellence, character building, and holistic development with modern teaching methodologies and age-appropriate curriculum.</p>
+
+                <div class="sub-heading">Core Subjects</div>
+                <div class="subject-grid">
+                    <div class="subject-pill">
+                        <div class="subject-pill-icon"><i class="fas fa-book"></i></div>
+                        <div class="subject-pill-name">English</div>
+                    </div>
+                    <div class="subject-pill">
+                        <div class="subject-pill-icon"><i class="fas fa-calculator"></i></div>
+                        <div class="subject-pill-name">Mathematics</div>
+                    </div>
+                    <div class="subject-pill">
+                        <div class="subject-pill-icon"><i class="fas fa-flask"></i></div>
+                        <div class="subject-pill-name">Science</div>
+                    </div>
+                    <div class="subject-pill">
+                        <div class="subject-pill-icon"><i class="fas fa-globe-asia"></i></div>
+                        <div class="subject-pill-name">Social Studies</div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <div class="sub-heading">Daily Schedule</div>
+                <div class="schedule-grid">
+                    <div class="schedule-item">
+                        <div class="schedule-label"><i class="fas fa-sun"></i> Academic Session</div>
+                        <div class="schedule-desc">Core subjects, interactive learning</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-label"><i class="fas fa-cloud-sun"></i> Activities Session</div>
+                        <div class="schedule-desc">Sports, arts, co-curricular</div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <div class="sub-heading">Class Levels</div>
+                <div class="schedule-grid" style="margin-bottom:1.5rem;">
+                    <div class="schedule-item">
+                        <div class="schedule-label"><i class="fas fa-child"></i> Primary (1–5)</div>
+                        <div class="schedule-desc">Foundation building & basic concepts</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-label"><i class="fas fa-graduation-cap"></i> Middle (6–8)</div>
+                        <div class="schedule-desc">Advanced concepts & preparation</div>
+                    </div>
+                </div>
+
+                <div class="sub-heading">Development Focus</div>
+                <div class="dev-grid">
+                    <div class="dev-item">
+                        <div class="dev-icon"><i class="fas fa-brain"></i></div>
+                        <div><div class="dev-title">Academic Excellence</div><div class="dev-desc">Strong foundation in core subjects</div></div>
+                    </div>
+                    <div class="dev-item">
+                        <div class="dev-icon"><i class="fas fa-users"></i></div>
+                        <div><div class="dev-title">Social Development</div><div class="dev-desc">Teamwork & leadership skills</div></div>
+                    </div>
+                    <div class="dev-item">
+                        <div class="dev-icon"><i class="fas fa-heart"></i></div>
+                        <div><div class="dev-title">Character Building</div><div class="dev-desc">Values and ethics education</div></div>
+                    </div>
+                    <div class="dev-item">
+                        <div class="dev-icon"><i class="fas fa-star"></i></div>
+                        <div><div class="dev-title">Talent Development</div><div class="dev-desc">Identifying & nurturing talents</div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TEACHING METHODS -->
+<section class="section section-white">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-eyebrow">How We Teach</span>
+            <h2 class="section-title">Teaching Methods</h2>
+            <p class="section-subtitle">Multiple Intelligence Approach — recognising and nurturing every type of learner</p>
+        </div>
+        <div>
+            <div class="method-item fade-in fade-in-delay-1">
+                <div class="method-icon"><i class="fas fa-gamepad"></i></div>
+                <div class="method-content">
+                    <div class="method-title">Play-Based Learning</div>
+                    <p class="method-desc">Engages bodily-kinesthetic and interpersonal intelligence through structured play, games, and group interactions that make learning genuinely fun and deeply memorable for every child.</p>
+                </div>
+            </div>
+            <div class="method-item fade-in fade-in-delay-2">
+                <div class="method-icon"><i class="fas fa-brain"></i></div>
+                <div class="method-content">
+                    <div class="method-title">Logical-Mathematical Development</div>
+                    <p class="method-desc">Develops logical-mathematical intelligence through puzzles, problem-solving activities, math games, and scientific experiments that build strong critical thinking skills from an early age.</p>
+                </div>
+            </div>
+            <div class="method-item fade-in fade-in-delay-3">
+                <div class="method-icon"><i class="fas fa-music"></i></div>
+                <div class="method-content">
+                    <div class="method-title">Musical & Spatial Learning</div>
+                    <p class="method-desc">Nurtures musical and spatial intelligence through music activities, art projects, 3D modeling, and creative expression that enhances artistic thinking and visual reasoning capabilities.</p>
+                </div>
+            </div>
+            <div class="method-item fade-in fade-in-delay-4">
+                <div class="method-icon"><i class="fas fa-book-open"></i></div>
+                <div class="method-content">
+                    <div class="method-title">Linguistic & Intrapersonal Growth</div>
+                    <p class="method-desc">Develops linguistic intelligence through storytelling, vocabulary building, reading, writing, and poetry — while nurturing intrapersonal intelligence through journaling, self-reflection, and emotional awareness practices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CURRICULUM HIGHLIGHTS -->
+<section class="section section-dark">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-eyebrow section-eyebrow-gold">Our Edge</span>
+            <h2 class="section-title section-title-light">Curriculum Highlights</h2>
+            <p class="section-subtitle section-subtitle-light">What makes our curriculum truly special, effective, and future-ready</p>
+        </div>
+        <div class="grid-3" style="position:relative;z-index:1;">
+            <div class="dark-card fade-in fade-in-delay-1">
+                <div class="dark-card-icon"><i class="fas fa-book-open"></i></div>
+                <div class="dark-card-title">NCERT Based</div>
+                <p class="dark-card-text">Our curriculum follows NCERT guidelines while incorporating innovative methods and additional learning materials for truly comprehensive development.</p>
+            </div>
+            <div class="dark-card fade-in fade-in-delay-2">
+                <div class="dark-card-icon"><i class="fas fa-heart"></i></div>
+                <div class="dark-card-title">Value Education</div>
+                <p class="dark-card-text">Regular value education classes help inculcate moral values, ethics, and character building alongside academic excellence every day.</p>
+            </div>
+            <div class="dark-card fade-in fade-in-delay-3">
+                <div class="dark-card-icon"><i class="fas fa-running"></i></div>
+                <div class="dark-card-title">Physical Education</div>
+                <p class="dark-card-text">Daily physical activities, sports, and yoga sessions ensure holistic development and promote healthy lifestyle habits from the very start.</p>
+            </div>
+            <div class="dark-card fade-in fade-in-delay-4">
+                <div class="dark-card-icon"><i class="fas fa-palette"></i></div>
+                <div class="dark-card-title">Arts & Crafts</div>
+                <p class="dark-card-text">Regular art, music, dance, and craft activities foster creativity, self-expression, and cultural appreciation in all our students.</p>
+            </div>
+            <div class="dark-card fade-in fade-in-delay-5">
+                <div class="dark-card-icon"><i class="fas fa-globe"></i></div>
+                <div class="dark-card-title">Environmental Studies</div>
+                <p class="dark-card-text">Focus on environmental awareness, conservation, and sustainable development through hands-on activities and meaningful projects.</p>
+            </div>
+            <div class="dark-card fade-in">
+                <div class="dark-card-icon"><i class="fas fa-laptop"></i></div>
+                <div class="dark-card-title">Digital Learning</div>
+                <p class="dark-card-text">Smart classrooms and digital tools blend traditional values with modern technology to prepare every student for the future.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LEARNING FACILITIES -->
+<section class="section section-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-eyebrow">Infrastructure</span>
+            <h2 class="section-title">Learning Facilities</h2>
+            <p class="section-subtitle">State-of-the-art infrastructure for the most optimal learning experience</p>
+        </div>
+        <div class="grid-3">
+            <div class="feature-card fade-in fade-in-delay-1">
+                <div class="card-icon"><i class="fas fa-desktop"></i></div>
+                <div class="card-title">Computer Lab</div>
+                <p class="card-desc">Modern computer lab with educational software and internet access for digital learning and essential technology skills development.</p>
+            </div>
+            <div class="feature-card fade-in fade-in-delay-2">
+                <div class="card-icon"><i class="fas fa-chalkboard"></i></div>
+                <div class="card-title">Smart Classrooms</div>
+                <p class="card-desc">Bright, well-equipped classrooms with smart boards and digital tools for highly interactive and engaging learning sessions.</p>
+            </div>
+            <div class="feature-card fade-in fade-in-delay-3">
+                <div class="card-icon"><i class="fas fa-book"></i></div>
+                <div class="card-title">School Library</div>
+                <p class="card-desc">A well-stocked library with books, reading corners, and quiet study areas for students to explore and grow their knowledge.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container">
+        <div style="position:relative;z-index:1;">
+            <h2 class="section-title">Ready to Begin?</h2>
+            <p class="cta-subtitle">Enroll your child in our programs and give them the academic foundation they deserve.</p>
+            <div class="cta-buttons">
+                <a href="admissions.html" class="btn-hero btn-gold"><i class="fas fa-graduation-cap"></i> Apply for Admission</a>
+                <a href="contact.html" class="btn-hero btn-outline-white"><i class="fas fa-phone"></i> Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <a href="index.html" class="footer-logo"><i class="fas fa-graduation-cap"></i> Daffodils Infant School</a>
+                <p class="footer-desc">Providing quality early childhood education in Patna, Bihar since 1999. Nurturing young minds and building bright futures.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-list">
+                    <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Nursery Program</a></li>
+                    <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Primary Classes</a></li>
+                    <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Activities</a></li>
+                    <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Contact Info</h4>
+                <ul class="footer-list">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Patna, Bihar, India</a></li>
+                    <li><a href="tel:+918507507173"><i class="fas fa-phone"></i> +91 85075 07173</a></li>
+                    <li><a href="mailto:info@daffodils.edu"><i class="fas fa-envelope"></i> info@daffodils.edu</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon–Sat: 8AM – 4PM</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 Daffodils Infant School. All rights reserved. Crafted with ❤️ in Patna</p></div>
+    </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+function toggleMenu() {
+    const menu = document.getElementById('navMenu');
+    const isOpen = menu.style.display === 'flex';
+    menu.style.cssText = isOpen ? '' : 'display:flex;flex-direction:column;position:absolute;top:70px;left:0;right:0;background:rgba(26,26,46,0.97);padding:1.5rem 2rem;gap:0.5rem;backdrop-filter:blur(20px);z-index:999;';
+}
+</script>
+</body>
+</html>

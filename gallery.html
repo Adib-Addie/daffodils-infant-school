@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Daffodils Infant School | School Events & Activities</title>
+    <meta name="description" content="Explore our school gallery featuring annual functions, sports day, classroom activities, cultural programs, awards and achievements at Daffodils Infant School Patna">
+    <meta name="keywords" content="school gallery, annual function, sports day, classroom activities, cultural programs, awards, achievements, Daffodils Infant School Patna">
+    <meta property="og:title" content="Gallery - Daffodils Infant School">
+    <meta property="og:description" content="Explore our school memories, events, activities and achievements">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://daffodils.edu/gallery.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #1a1a2e;
+    --secondary: #16213e;
+    --gold: #f4c542;
+    --gold-light: #fde98a;
+    --teal: #0f9b8e;
+    --cream: #fef9ef;
+    --white: #ffffff;
+    --text-main: #1a1a2e;
+    --text-muted: #6b7280;
+    --radius: 20px;
+    --shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-main); overflow-x: hidden; }
+
+/* NAVBAR */
+.navbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.2rem 0;
+    background: rgba(26,26,46,0.96); backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3); transition: all 0.4s ease;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.navbar-container { display: flex; align-items: center; justify-content: space-between; }
+.navbar-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; color: var(--white); }
+.navbar-logo i { color: var(--gold); font-size: 1.6rem; }
+.navbar-menu { display: flex; list-style: none; gap: 0.25rem; }
+.navbar-link { text-decoration: none; color: rgba(255,255,255,0.85); font-weight: 500; font-size: 0.95rem; padding: 0.5rem 1rem; border-radius: 8px; transition: all 0.3s ease; }
+.navbar-link:hover, .navbar-link.active { color: var(--gold); background: rgba(244,197,66,0.12); }
+.navbar-toggle { display: none; background: none; border: none; color: white; font-size: 1.4rem; cursor: pointer; }
+
+/* PAGE HERO */
+.page-hero {
+    background: linear-gradient(160deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    padding: 9rem 0 5rem; position: relative; overflow: hidden; text-align: center;
+}
+.page-hero::before {
+    content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+    width: 800px; height: 500px;
+    background: radial-gradient(ellipse, rgba(244,197,66,0.1) 0%, transparent 70%); border-radius: 50%;
+}
+.page-hero::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 80px;
+    background: var(--cream); clip-path: ellipse(55% 100% at 50% 100%);
+}
+.page-hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: linear-gradient(135deg, var(--gold), #f59e0b);
+    color: var(--primary); padding: 0.45rem 1.2rem; border-radius: 50px;
+    font-size: 0.88rem; font-weight: 700; margin-bottom: 1.5rem;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    box-shadow: 0 8px 25px rgba(244,197,66,0.4);
+    animation: badgePop 0.8s cubic-bezier(0.34,1.56,0.64,1) 0.3s both;
+}
+@keyframes badgePop { from { opacity:0; transform:scale(0.6) translateY(20px); } to { opacity:1; transform:scale(1) translateY(0); } }
+.page-hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem,5vw,3.8rem); font-weight: 900; color: var(--white); line-height: 1.15; margin-bottom: 1.2rem; animation: heroFadeUp 1s cubic-bezier(0.4,0,0.2,1) 0.5s both; }
+.page-hero-title span { background: linear-gradient(135deg, var(--gold), var(--gold-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.page-hero-subtitle { font-size: 1.15rem; color: rgba(255,255,255,0.75); max-width: 560px; margin: 0 auto; line-height: 1.7; animation: heroFadeUp 1s cubic-bezier(0.4,0,0.2,1) 0.7s both; }
+@keyframes heroFadeUp { from { opacity:0; transform:translateY(50px); } to { opacity:1; transform:translateY(0); } }
+
+/* FILTER SECTION */
+.filter-section {
+    background: var(--primary);
+    padding: 1.5rem 0;
+    position: sticky; top: 0; z-index: 500;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.35);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.filter-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.6rem; }
+.filter-btn {
+    display: inline-flex; align-items: center; gap: 0.45rem;
+    padding: 0.6rem 1.3rem; border-radius: 50px;
+    border: 1.5px solid rgba(255,255,255,0.18);
+    background: transparent; color: rgba(255,255,255,0.7);
+    font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 0.88rem;
+    cursor: pointer; transition: all 0.3s ease; letter-spacing: 0.01em;
+}
+.filter-btn i { font-size: 0.78rem; }
+.filter-btn:hover {
+    border-color: var(--gold); color: var(--gold);
+    background: rgba(244,197,66,0.1); transform: translateY(-2px);
+}
+.filter-btn.active {
+    background: linear-gradient(135deg, var(--gold), #f59e0b);
+    border-color: transparent; color: var(--primary);
+    box-shadow: 0 6px 20px rgba(244,197,66,0.4);
+}
+
+/* GALLERY SECTION */
+.gallery-section { padding: 4rem 0 5rem; background: var(--cream); }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.gallery-item {
+    position: relative; border-radius: var(--radius); overflow: hidden;
+    background: var(--primary); box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+    cursor: pointer; aspect-ratio: 4/3;
+}
+.gallery-item:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 25px 60px rgba(0,0,0,0.22); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+.gallery-item:hover img { transform: scale(1.1); }
+
+.gallery-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(26,26,46,0.92) 0%, rgba(26,26,46,0.2) 55%, transparent 100%);
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 1.5rem; opacity: 0; transition: opacity 0.4s ease;
+}
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+
+.gallery-overlay-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 0.3rem; transform: translateY(10px); transition: transform 0.4s ease; }
+.gallery-overlay-desc { font-size: 0.82rem; color: rgba(255,255,255,0.75); line-height: 1.5; transform: translateY(10px); transition: transform 0.4s ease 0.05s; }
+.gallery-item:hover .gallery-overlay-title,
+.gallery-item:hover .gallery-overlay-desc { transform: translateY(0); }
+
+.gallery-zoom-btn {
+    position: absolute; top: 1rem; right: 1rem;
+    width: 38px; height: 38px; border-radius: 50%;
+    background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(255,255,255,0.3); color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85rem; opacity: 0; transition: all 0.3s ease;
+}
+.gallery-item:hover .gallery-zoom-btn { opacity: 1; }
+.gallery-zoom-btn:hover { background: var(--gold); color: var(--primary); border-color: var(--gold); }
+
+.gallery-category-badge {
+    position: absolute; top: 1rem; left: 1rem;
+    background: linear-gradient(135deg, var(--gold), #f59e0b);
+    color: var(--primary); padding: 0.3rem 0.85rem; border-radius: 20px;
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em;
+    text-transform: uppercase; opacity: 0; transition: opacity 0.3s ease;
+    box-shadow: 0 4px 12px rgba(244,197,66,0.4);
+}
+.gallery-item:hover .gallery-category-badge { opacity: 1; }
+
+/* HIDDEN items */
+.gallery-item.hidden { display: none; }
+
+/* LOAD MORE */
+.load-more-wrap { text-align: center; margin-top: 3rem; }
+.btn-load-more {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    padding: 1rem 2.5rem; border-radius: 50px; border: none; cursor: pointer;
+    background: linear-gradient(135deg, var(--primary), #0f3460);
+    color: var(--gold); font-family: 'DM Sans', sans-serif; font-weight: 700;
+    font-size: 1rem; border: 2px solid rgba(244,197,66,0.3);
+    transition: all 0.4s cubic-bezier(0.4,0,0.2,1); position: relative; overflow: hidden;
+    box-shadow: 0 8px 25px rgba(26,26,46,0.25);
+}
+.btn-load-more::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent); transform: translateX(-100%); transition: transform 0.5s ease; }
+.btn-load-more:hover::after { transform: translateX(100%); }
+.btn-load-more:hover { transform: translateY(-4px) scale(1.04); border-color: var(--gold); box-shadow: 0 15px 40px rgba(26,26,46,0.35); }
+.btn-load-more:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+/* SPINNER */
+.spinner { width: 20px; height: 20px; border: 3px solid rgba(244,197,66,0.3); border-top-color: var(--gold); border-radius: 50%; animation: spin 0.7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* LIGHTBOX */
+.lightbox {
+    position: fixed; inset: 0; z-index: 9999;
+    background: rgba(10,10,20,0.96); backdrop-filter: blur(12px);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; visibility: hidden; transition: all 0.35s ease;
+    padding: 2rem;
+}
+.lightbox.active { opacity: 1; visibility: visible; }
+.lightbox-inner {
+    position: relative; max-width: 900px; width: 100%;
+    border-radius: var(--radius); overflow: hidden;
+    transform: scale(0.88); transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+}
+.lightbox.active .lightbox-inner { transform: scale(1); }
+.lightbox-img { width: 100%; max-height: 80vh; object-fit: contain; display: block; background: #111; }
+.lightbox-info {
+    background: var(--primary); padding: 1.25rem 1.75rem;
+    display: flex; align-items: center; justify-content: space-between;
+}
+.lightbox-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); }
+.lightbox-desc { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top: 0.2rem; }
+.lightbox-counter { font-size: 0.85rem; color: var(--gold); font-weight: 600; }
+
+.lightbox-close {
+    position: absolute; top: 1rem; right: 1rem;
+    width: 42px; height: 42px; border-radius: 50%; border: none; cursor: pointer;
+    background: rgba(255,255,255,0.12); backdrop-filter: blur(10px);
+    color: white; font-size: 1.1rem; display: flex; align-items: center; justify-content: center;
+    transition: all 0.3s ease; z-index: 10;
+}
+.lightbox-close:hover { background: var(--gold); color: var(--primary); transform: rotate(90deg) scale(1.1); }
+
+.lightbox-nav {
+    position: absolute; top: 50%; transform: translateY(-60%);
+    width: 50px; height: 50px; border-radius: 50%; border: none; cursor: pointer;
+    background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(255,255,255,0.2); color: white; font-size: 1.1rem;
+    display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;
+}
+.lightbox-nav:hover { background: var(--gold); color: var(--primary); border-color: var(--gold); transform: translateY(-60%) scale(1.1); }
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+
+/* FOOTER */
+.footer { background: #111827; color: rgba(255,255,255,0.75); padding: 4rem 0 0; }
+.footer-content { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.footer-logo { display: flex; align-items: center; gap: 0.75rem; font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: white; margin-bottom: 1rem; text-decoration: none; }
+.footer-logo i { color: var(--gold); }
+.footer-desc { font-size: 0.93rem; line-height: 1.7; margin-bottom: 1.5rem; }
+.footer-socials { display: flex; gap: 0.75rem; }
+.social-link { width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; font-size: 1rem; }
+.social-link:hover { background: var(--gold); color: var(--primary); transform: translateY(-3px); }
+.footer-heading { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: white; font-weight: 700; margin-bottom: 1.25rem; }
+.footer-list { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+.footer-list li a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 0.92rem; transition: color 0.3s ease; display: flex; align-items: center; gap: 0.4rem; }
+.footer-list li a:hover { color: var(--gold); }
+.footer-list li a i { font-size: 0.8rem; color: var(--gold); }
+.footer-bottom { text-align: center; padding: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.35); }
+
+/* FADE-IN */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) { .gallery-grid { grid-template-columns: repeat(2,1fr); } .footer-content { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 768px) { .gallery-grid { grid-template-columns: repeat(2,1fr); gap: 0.85rem; } .footer-content { grid-template-columns: 1fr; gap: 2rem; } .navbar-menu { display: none; } .navbar-toggle { display: block; } .lightbox-nav { width: 40px; height: 40px; font-size: 0.95rem; } .filter-btn { padding: 0.5rem 1rem; font-size: 0.8rem; } }
+@media (max-width: 480px) { .gallery-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Daffodils Infant School</span>
+            </a>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="admissions.html" class="navbar-link">Admissions</a></li>
+                <li><a href="academics.html" class="navbar-link">Academics</a></li>
+                <li><a href="gallery.html" class="navbar-link active">Gallery</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="container">
+        <div class="page-hero-eyebrow"><i class="fas fa-images"></i> School Memories</div>
+        <h1 class="page-hero-title">Our <span>Gallery</span></h1>
+        <p class="page-hero-subtitle">Capturing precious moments and celebrating achievements at Daffodils Infant School</p>
+    </div>
+</section>
+
+<!-- FILTER -->
+<div class="filter-section">
+    <div class="container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all"><i class="fas fa-th"></i> All Photos</button>
+            <button class="filter-btn" data-filter="events"><i class="fas fa-calendar-alt"></i> Events</button>
+            <button class="filter-btn" data-filter="sports"><i class="fas fa-running"></i> Sports</button>
+            <button class="filter-btn" data-filter="cultural"><i class="fas fa-music"></i> Cultural</button>
+            <button class="filter-btn" data-filter="classroom"><i class="fas fa-chalkboard-teacher"></i> Classroom</button>
+            <button class="filter-btn" data-filter="achievements"><i class="fas fa-trophy"></i> Achievements</button>
+        </div>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="gallery-grid" id="galleryGrid">
+
+            <div class="gallery-item fade-in" data-category="events">
+                <span class="gallery-category-badge">Annual Function</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1566230724840-af1882a72ba9?w=600&q=80" alt="Annual Function 2024" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Annual Function 2024</div>
+                    <div class="gallery-overlay-desc">Grand celebration with colorful performances and prize distribution</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="events">
+                <span class="gallery-category-badge">Annual Function</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Dance Performances" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Dance Performances</div>
+                    <div class="gallery-overlay-desc">Students showcasing talent in traditional and contemporary dance</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="sports">
+                <span class="gallery-category-badge">Sports Day</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Sports Day 2024" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Sports Day 2024</div>
+                    <div class="gallery-overlay-desc">Athletic competitions and fun games for all age groups</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="sports">
+                <span class="gallery-category-badge">Sports Day</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?w=600&q=80" alt="Race Competitions" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Race Competitions</div>
+                    <div class="gallery-overlay-desc">Exciting track events and relay races for young athletes</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="classroom">
+                <span class="gallery-category-badge">Classroom</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&q=80" alt="Interactive Learning" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Interactive Learning</div>
+                    <div class="gallery-overlay-desc">Hands-on activities and engaging classroom sessions</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="classroom">
+                <span class="gallery-category-badge">Classroom</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Creative Arts" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Creative Arts</div>
+                    <div class="gallery-overlay-desc">Students expressing creativity through painting and craft</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="cultural">
+                <span class="gallery-category-badge">Cultural</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1560785496-3c9d27877182?w=600&q=80" alt="Cultural Festivities" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Cultural Festivities</div>
+                    <div class="gallery-overlay-desc">Celebrating diverse cultures through music, dance and drama</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="cultural">
+                <span class="gallery-category-badge">Cultural</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&q=80" alt="Music & Dance" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Music & Dance</div>
+                    <div class="gallery-overlay-desc">Students performing in cultural events and festivals</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="achievements">
+                <span class="gallery-category-badge">Achievements</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?w=600&q=80" alt="Award Ceremony" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Award Ceremony</div>
+                    <div class="gallery-overlay-desc">Recognizing excellence in academics and co-curricular activities</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="achievements">
+                <span class="gallery-category-badge">Achievements</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=600&q=80" alt="Prize Distribution" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Prize Distribution</div>
+                    <div class="gallery-overlay-desc">Celebrating student achievements and milestones</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="events">
+                <span class="gallery-category-badge">Events</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1551966775-a4ddc8df052b?w=600&q=80" alt="Special Events" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Special Events</div>
+                    <div class="gallery-overlay-desc">Memorable moments from various school celebrations</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="sports">
+                <span class="gallery-category-badge">Sports</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&q=80" alt="Indoor Sports" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">Indoor Sports</div>
+                    <div class="gallery-overlay-desc">Fun indoor games and physical activities for all students</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="load-more-wrap">
+            <button class="btn-load-more" id="loadMoreBtn">
+                <i class="fas fa-plus-circle"></i> Load More Photos
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-info">
+            <div>
+                <div class="lightbox-title" id="lightboxTitle">—</div>
+                <div class="lightbox-desc" id="lightboxDesc">—</div>
+            </div>
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <a href="index.html" class="footer-logo"><i class="fas fa-graduation-cap"></i> Daffodils Infant School</a>
+                <p class="footer-desc">Providing quality early childhood education in Patna, Bihar since 1999. Nurturing young minds and building bright futures.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-list">
+                    <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Nursery Program</a></li>
+                    <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Primary Classes</a></li>
+                    <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Activities</a></li>
+                    <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Contact Info</h4>
+                <ul class="footer-list">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Patna, Bihar, India</a></li>
+                    <li><a href="tel:+918507507173"><i class="fas fa-phone"></i> +91 85075 07173</a></li>
+                    <li><a href="mailto:info@daffodils.edu"><i class="fas fa-envelope"></i> info@daffodils.edu</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon–Sat: 8AM – 4PM</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 Daffodils Infant School. All rights reserved. Crafted with ❤️ in Patna</p></div>
+    </div>
+</footer>
+
+<script>
+// ─── MOBILE MENU ───
+function toggleMenu() {
+    const m = document.getElementById('navMenu');
+    const open = m.style.display === 'flex';
+    m.style.cssText = open ? '' : 'display:flex;flex-direction:column;position:absolute;top:70px;left:0;right:0;background:rgba(26,26,46,0.97);padding:1.5rem 2rem;gap:0.5rem;backdrop-filter:blur(20px);z-index:999;';
+}
+
+// ─── FADE-IN OBSERVER ───
+const fadeObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => fadeObs.observe(el));
+
+// ─── FILTER ───
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            const show = filter === 'all' || item.dataset.category === filter;
+            item.style.display = show ? '' : 'none';
+            if (show) { item.style.opacity = '0'; item.style.transform = 'translateY(20px)'; setTimeout(() => { item.style.opacity = '1'; item.style.transform = 'translateY(0)'; item.style.transition = 'opacity 0.4s ease, transform 0.4s ease'; }, 10); }
+        });
+    });
+});
+
+// ─── LIGHTBOX ───
+let currentIdx = 0;
+function getVisibleItems() {
+    return Array.from(document.querySelectorAll('.gallery-item')).filter(i => i.style.display !== 'none');
+}
+
+function openLightbox(idx) {
+    const items = getVisibleItems();
+    currentIdx = idx;
+    const item = items[idx];
+    const img = item.querySelector('img');
+    const title = item.querySelector('.gallery-overlay-title')?.textContent || '';
+    const desc  = item.querySelector('.gallery-overlay-desc')?.textContent || '';
+    document.getElementById('lightboxImg').src = img.src;
+    document.getElementById('lightboxImg').alt = img.alt;
+    document.getElementById('lightboxTitle').textContent = title;
+    document.getElementById('lightboxDesc').textContent = desc;
+    document.getElementById('lightboxCounter').textContent = `${idx + 1} / ${items.length}`;
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function navLightbox(dir) {
+    const items = getVisibleItems();
+    currentIdx = (currentIdx + dir + items.length) % items.length;
+    const item = items[currentIdx];
+    const img = item.querySelector('img');
+    const lbImg = document.getElementById('lightboxImg');
+    lbImg.style.opacity = '0';
+    setTimeout(() => {
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
+        document.getElementById('lightboxTitle').textContent = item.querySelector('.gallery-overlay-title')?.textContent || '';
+        document.getElementById('lightboxDesc').textContent  = item.querySelector('.gallery-overlay-desc')?.textContent || '';
+        document.getElementById('lightboxCounter').textContent = `${currentIdx + 1} / ${items.length}`;
+        lbImg.style.opacity = '1';
+        lbImg.style.transition = 'opacity 0.25s ease';
+    }, 180);
+}
+
+// Attach click to all items
+function attachItemClicks() {
+    document.querySelectorAll('.gallery-item').forEach((item, idx) => {
+        item.onclick = () => {
+            const visIdx = getVisibleItems().indexOf(item);
+            if (visIdx !== -1) openLightbox(visIdx);
+        };
+    });
+}
+attachItemClicks();
+
+document.getElementById('lightboxClose').onclick = closeLightbox;
+document.getElementById('lightboxPrev').onclick = () => navLightbox(-1);
+document.getElementById('lightboxNext').onclick  = () => navLightbox(1);
+document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLightbox(); });
+document.addEventListener('keydown', e => {
+    if (!document.getElementById('lightbox').classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') navLightbox(-1);
+    if (e.key === 'ArrowRight') navLightbox(1);
+});
+
+// ─── LOAD MORE ───
+const extraImages = [
+    { cat: 'classroom', src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80', title: 'Science Lab', desc: 'Hands-on science experiments and discovery sessions' },
+    { cat: 'events',    src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80', title: 'School Festival', desc: 'Annual festival with fun stalls and student performances' },
+    { cat: 'sports',    src: 'https://images.unsplash.com/photo-1526676037777-05a232554f77?w=600&q=80', title: 'Yoga Day', desc: 'International Yoga Day celebration with all students' },
+    { cat: 'cultural',  src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80', title: 'Art Exhibition', desc: 'Students displaying creative artwork and craft projects' },
+    { cat: 'achievements', src: 'https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&q=80', title: 'Top Performers', desc: 'Recognizing academic toppers of the year' },
+    { cat: 'classroom', src: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80', title: 'Library Hour', desc: 'Students enjoying quiet reading time in our school library' },
+];
+
+let loaded = false;
+document.getElementById('loadMoreBtn').addEventListener('click', function() {
+    if (loaded) { this.style.display = 'none'; return; }
+    this.innerHTML = '<div class="spinner"></div> Loading...';
+    this.disabled = true;
+    setTimeout(() => {
+        const grid = document.getElementById('galleryGrid');
+        extraImages.forEach(d => {
+            const div = document.createElement('div');
+            div.className = 'gallery-item fade-in';
+            div.dataset.category = d.cat;
+            div.innerHTML = `
+                <span class="gallery-category-badge">${d.cat.charAt(0).toUpperCase()+d.cat.slice(1)}</span>
+                <div class="gallery-zoom-btn"><i class="fas fa-expand"></i></div>
+                <img src="${d.src}" alt="${d.title}" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay-title">${d.title}</div>
+                    <div class="gallery-overlay-desc">${d.desc}</div>
+                </div>`;
+            grid.appendChild(div);
+            fadeObs.observe(div);
+        });
+        attachItemClicks();
+        loaded = true;
+        this.innerHTML = '<i class="fas fa-check"></i> All Photos Loaded';
+        this.disabled = false;
+        setTimeout(() => { this.style.display = 'none'; }, 1800);
+    }, 1200);
+});
+</script>
+</body>
+</html>
