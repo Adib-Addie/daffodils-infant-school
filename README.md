@@ -1,6 +1,6 @@
 # 🌼 Daffodils Infant School Website
 
-> Quality early childhood education in Patna, Bihar since 1999
+> Quality early childhood education in Patna, Bihar
 
 A modern, responsive website for Daffodils Infant School built with pure HTML, CSS, and JavaScript.
 
